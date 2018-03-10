@@ -1,0 +1,14 @@
+<article class="panel panel-default" [ngStyle]="{ backgroundColor: '#ccc' }">
+    <div class="panel-body">
+      {{message.content}}
+    </div>
+    <footer class="panel-footer">
+      <div class="author">
+        {{message.username}}
+      </div>
+      <div class="config">
+        <a (click)="onEdit()" href="#">Edit</a>
+        <a (click)="deleteMessage()" href="#">Delete</a>
+      </div>
+    </footer>
+  </article>
